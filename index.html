@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single-page-application - clima</title>
+
+    <!-- Link hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- App del clima con vanilla js -->
+    <div id="root">
+
+        <header class="header">
+            <img id="logo" src="" alt="state">
+            <h3 class="title"></h3>
+        </header>
+
+        <div class="search" id="search">
+            <input id="searchValue" required type="text" placeholder="Ingrese una ciudad" title="El dato ingresado no debe llevar caracteres especiales">
+            <button class="btn" type="button">Buscar</button>
+        </div>
+
+        <article class="container-flex">
+            <!--Sección temperatura  -->
+            <section class="container--temperature">
+                <h2 id="value-temperature"></h2>
+                <h3 id="description"></h3>
+            </section>
+
+            <!--Sección Ubicacion -->
+            <section class="container--location">
+                <h2 id="city-location"></h2>
+                <img id="icon" src="" alt="icon">
+            </section>
+
+            <!--Sección calculus -->
+            <section class="container--calculus">
+                <h2>Velocidad del viento</h2>
+                <h3 id="wind-speed"></h3>
+            </section>
+
+        </article>
+
+    </div>
+    
+    <!-- Vicular archivo js -->
+    <script src="App.js"></script>
+</body>
+</html>
